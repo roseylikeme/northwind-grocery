@@ -713,3 +713,15 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   background: #FF4F02;
   color: #fff;
 }
+
+/* MORE STUFF */
+#categorySelect {
+  display: none;
+}
+
+/* Expands Table To Be Responsive with Device Width */
+td{
+  width: 100%;
+}
+
+.hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
