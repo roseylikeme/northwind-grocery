@@ -9,12 +9,13 @@
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<!-- bootstrap.min css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- TODO ^ Remove  -->
 	<!-- Font-awesome.min css -->
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<!-- Main Stylesheet -->
-	<link rel="stylesheet" href="css/animate.min.css">
-
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css" integrity="sha512-qlC/X7VhKU7RelnkpGtFrcgHBGeqXku4GrCwHkOcyKAOU6vQ48y6cMawBHPpMDL7IHJKIa3AR/c182iMtKZwpA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Responsive Stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
@@ -22,14 +23,14 @@
 	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
 	<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> -->
 	<script>
-		window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+		window.jQuery || document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"><\/script>')
 	</script>
-	<script src="js/jquery.nav.js"></script>
-	<script src="js/jquery.sticky.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- Sticky Stuff -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js" integrity="sha512-p+GPBTyASypE++3Y4cKuBpCA8coQBL6xEDG01kmv4pPkgjKFaJlRglGpCM2OsuI14s4oE7LInjcL5eAUVZmKAQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- WOW Animates -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/plugins.js"></script>
-	<script src="js/wow.min.js"></script>
-	<script src="js/main.js"></script>
+	<script defer src="js/main.js"></script>
 </head>
 <body>
     <!-- Hero Image -->
@@ -42,7 +43,7 @@
 			<div class="row">
 				<div class="col-md-12">
 					<div class="block">
-						<nav class="navbar navbar-default">
+						<nav class="navbar navbar-default sticky-top">
 							<div class="container-fluid">
 								<!-- Brand and toggle get grouped for better mobile display -->
 								<div class="navbar-header">
@@ -90,5 +91,28 @@
 			</div><!-- .row close -->
 		</div><!-- .containe close -->
 	</section><!-- #price close -->
+	<!-- ABOUT US -->
+	<section id="about-us">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="block">
+						<img class="wow fadeInUp myPhoto" data-wow-duration="300ms" data-wow-delay="400ms" src="https://media-exp1.licdn.com/dms/image/C5603AQHnhxDbDchVPw/profile-displayphoto-shrink_400_400/0/1652334762769?e=1676505600&v=beta&t=W8_bSvJP-sWBImgNK89ZoUQhD2T3pnVk5eHpdXJmYEw"
+							alt="cooker-img">
+						<h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">Your
+							<span>Ingredients</span> </br> Never Looked So <span>Good</span>
+						</h1>
+						<p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">Lorem ipsum dolor sit
+							amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+							magna aliqua. Ut enim </br> ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+							ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in </br>voluptate
+							velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat</p>
+					</div>
+				</div><!-- .col-md-12 close -->
+			</div><!-- .row close -->
+		</div><!-- .containe close -->
+	</section><!-- #call-to-action close -->
+
+	<!-- SCRIPTS -->
 </body>
 </html>
