@@ -1,22 +1,8 @@
-$(document).ready(function () {
-
-    $("#owl-example").owlCarousel({
-        // Most important owl features
-        items: 4,
-        pagination: true,
-        paginationSpeed: 1000,
-        navigation: true,
-        navigationText: ["", "<i class='fa fa-angle-right'></i>"],
-        slideSpeed: 800,
-    });
-
-    //Initiate WOW JS
-    new WOW().init();
-});
-
 // Window Onload?
 window.addEventListener('load', function () {
     console.log("Did it load?")
+    //Initiate WOW JS
+    new WOW().init();
     filterSelect.onchange = filterSelected;
     categorySelect.onchange = viewFilteredProducts;
 })
@@ -41,7 +27,6 @@ function filterSelected() {
 
 // 
 function initCategoryDropdown(select) {
-    console.log("Initiate 2nd Dropdown")
     select.length = 0;
     let option = new Option("Select a category", "select")
     select.appendChild(option);
@@ -56,7 +41,6 @@ function initCategoryDropdown(select) {
 }
 
 function viewAll(){
-    console.log("Displaying Info")
         clearTable(productTableBody)
         $("#categorySelect").addClass("d-none")
         productTable.style.display = "block";
@@ -85,7 +69,6 @@ function viewFilteredProducts() {
     else {
         productTable.style.display = "block";
         productTableDisplay.style.display = "block";
-        console.log("Displaying Info")
         fetch(`http://localhost:8081/api/products`)
         .then(response => response.json())
         .then(data => {
