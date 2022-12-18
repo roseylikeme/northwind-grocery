@@ -163,6 +163,10 @@ nav .block {
   /* background: rgba(255, 255, 255, 0.89); */
 }
 
+#navbarSupportedContent {
+  flex-basis: content;
+}
+
 nav .block .navbar-default {
   border: none;
   border-radius: 0px;
