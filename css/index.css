@@ -1,0 +1,95 @@
+/*--
+    nav Start
+--*/
+nav {
+    z-index: 99999;
+    width: 100%;
+}
+
+nav .block {
+    margin-top: -48px;
+    background: #fff;
+    padding: 25px 40px;
+    /* background: rgba(255, 255, 255, 0.89); */
+}
+
+nav .block .navbar-default {
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0;
+    background: white;
+}
+
+nav .block .navbar-default .navbar-brand {
+    padding-left: 0px;
+}
+
+nav .block .navbar-default .navbar-nav {
+    padding-top: 10px;
+}
+
+nav .block .navbar-default .navbar-nav>li>a {
+    color: #2E2E2E;
+    padding: 10px 0px;
+    margin: 0px 15px;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.navbar-default .navbar-nav>li>a:before {
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    width: 0;
+}
+
+nav .block .navbar-default .navbar-nav>li>a:hover:before {
+    background-color: #e94c3d;
+    content: "";
+    width: 100%;
+}
+
+nav .block .navbar-default .navbar-nav>li.current>a {
+    color: #2E2E2E;
+    padding: 10px 0px;
+    margin: 0px 15px;
+}
+
+nav .block .navbar-default .navbar-nav>li.current>a:before {
+    background-color: transparent;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 2px;
+    -webkit-transition: .3s all;
+    -o-transition: .3s all;
+    transition: .3s all;
+    width: 100%;
+    background-color: #e94c3d;
+}
+
+nav .block .navbar-default .navbar-nav>.active>a,
+nav .block .navbar-default .navbar-nav>.active>a:focus,
+nav .block .navbar-default .navbar-nav>.active>a:hover {
+    background: none;
+}
+
+nav .block .navbar-default .navbar-nav>.active>a:before,
+nav .block .navbar-default .navbar-nav>.active>a:focus:before,
+nav .block .navbar-default .navbar-nav>.active>a:hover:before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FF5333;
+}
