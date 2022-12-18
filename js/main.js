@@ -53,7 +53,7 @@ function viewAll(){
                 let cell1 = row.insertCell(0);
                 let cell2 = row.insertCell(1);
                 let cell3 = row.insertCell(2);
-                cell1.innerHTML = `<a href="productdetails.html?productId=${datum.productId}">${datum.productName}</a>`;
+                cell1.innerHTML = `<a href="details.html?productId=${datum.productId}">${datum.productName}</a>`;
                 cell2.innerHTML = `$${(parseFloat(datum.unitPrice)).toFixed(2)}`; // Removes extra decimals
                 cell3.innerHTML = datum.productId;
             }
@@ -78,7 +78,7 @@ function viewFilteredProducts() {
                     let cell1 = row.insertCell(0);
                     let cell2 = row.insertCell(1);
                     let cell3 = row.insertCell(2);
-                    cell1.innerHTML = `<a href="productdetails.html?productId=${datum.productId}">${datum.productName}</a>`;
+                    cell1.innerHTML = `<a href="details.html?productId=${datum.productId}">${datum.productName}</a>`;
                     cell2.innerHTML = `$${(parseFloat(datum.unitPrice)).toFixed(2)}`;
                     cell3.innerHTML = datum.productId;
                 }
