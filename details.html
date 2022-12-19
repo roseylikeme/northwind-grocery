@@ -5,88 +5,79 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Products Search</title>
+	<title>Products Details</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+		integrity="sha512-U6K1YLIFUWcvuw5ucmMtT9HH4t0uz3M366qrF5y4vnyH6dgDzndlcGvH/Lz5k8NFh80SN95aJ5rqGZEdaQZ7ZQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<!-- CSS -->
+	<!-- Semantic -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet" />
 	<!-- Owl Carousel -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css"
 		integrity="sha512-RWhcC19d8A3vE7kpXq6Ze4GcPfGe3DQWuenhXAbcGiZOaqGojLtWwit1eeM9jLGHFv8hnwpX3blJKGjTsf2HxQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- bootstrap.min css -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+		integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<!-- Font-awesome.min css -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.min.css"
 		integrity="sha512-ZfKn7az0YmtPUojZnRXO4CUdt3pn+ogBAyGbqGplrCIR5B/tQwPGtF2q29t+zQj6mC/20w4sSl0cF5F3r0HKSQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Animate CSS -->
+	<!-- Main Stylesheet -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css"
 		integrity="sha512-qlC/X7VhKU7RelnkpGtFrcgHBGeqXku4GrCwHkOcyKAOU6vQ48y6cMawBHPpMDL7IHJKIa3AR/c182iMtKZwpA=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- Main CSS -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/index.css">
+
 	<!-- Responsive Stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
-	<!-- Js -->
-	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0/jquery.sticky.min.js"
-		integrity="sha512-SDPkeqwbJdaqhKBkBPxq0RrS0DAvHtIR6hXwpuINziXwWAfLPt57tHAjvM878hSBAPZXeoig5GIW+UAUYUHQvQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
-		integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-	<script src="js/main.js"></script>
 </head>
-
 <body class="detailspg">
-	<!--
-	header-img start 
-	============================== -->
+	<!-- Hero Image -->
 	<section id="hero-area">
-		<img class="img-responsive" src="images/header4.jpeg" alt="">
+		<img class="img-fluid" src="images/header4.jpeg" alt="">
+		<!-- Img Fluid for Bs5 // img-responsive for bs3 -->
 	</section>
-	<!--
-    Header start 
-	============================== -->
+	<!-- Navbar Stuff -->
+	<!-- 
+		TODO: Fix Navbar to be BS5 Responsive • COMPLETE Dec 14, 9:16
+		TODO: Fix underline of each link. 12/14 9:25
+		TODO: Fix animation broken 12/14 9:25
+	-->
 	<nav id="navigation">
 		<div class="container">
+			<!-- Row keeps things align with the rest of the page -->
 			<div class="row">
-				<div class="col-md-12">
-					<div class="block">
-						<nav class="navbar navbar-default">
+				<div class="col-md-12 d-flex justify-content-center w-100">
+					<div class="block position-absolute w-75">
+						<nav class="navbar navbar-default navbar-expand-md">
 							<div class="container-fluid">
 								<!-- Brand and toggle get grouped for better mobile display -->
-								<div class="navbar-header">
-									<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-										data-target="#bs-example-navbar-collapse-1">
-										<span class="sr-only">Toggle navigation</span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-										<span class="icon-bar"></span>
-									</button>
-									<a class="navbar-brand" href="#">
-										<h1 class="logoOfPage">Northwind's</h1>
-									</a>
+								<a class="navbar-brand" href="#">
+									<h1 class="logoOfPage">Northwind's</h1>
+								</a>
 
-								</div>
-
-								<!-- Collect the nav links, forms, and other content for toggling -->
-								<nav class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-									<ul class="nav navbar-nav navbar-right" id="">
-										<li><a href="index.html">Home</a></li>
-										<li><a href="productsBS5.html">Products</a></li>
-									</ul>
-								</nav>
+								<button aria-controls="navbarSupportedContent" aria-expanded="false"
+									aria-label="Toggle navigation" class="navbar-toggler custom-toggler"
+									data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse"
+									type="button"><span class="navbar-toggler-icon"></span></button>
 
 							</div>
-						</nav>
+
+							<!-- Navbar Links -->
+							<nav class="collapse in navbar-collapse col-md-6" id="navbarSupportedContent">
+								<ul class="nav navbar-nav navbar-right text-right">
+									<li class="prod"><a href="index.html">Home</a></li>
+									<li class="prod"><a href="productsBS5.html">Products</a></li>
+								</ul>
+							</nav>
 					</div>
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav><!-- header close -->
 
 	<section id="about-us">
 		<div class="container">
@@ -99,9 +90,35 @@
 						<h1 id="productNameField" class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms">
 							Product Name
 						</h1>
-						<p id="productDescField"class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
-							Product Description
-						</p>
+						<div class="card rounded-5 p-5 wow fadeInUp text-bg-dark">
+							<div class="h-100 p-5 text-bg-dark rounded-3 wow fadeInUp"
+								id="ptD">
+								<table class="table text-bg-dark" id="pT">
+									<!-- Table Content -->
+									<tbody id="productInfoBody">
+										<tr>
+											<th class="hideextra tableHead" colspan="2" id="prodID">2</th>
+										</tr>
+										<tr>
+											<th class="hideextra thead">Product Cost:</th>
+											<td id="prodCost">Something Else</td>
+										</tr>
+										<tr class="tr2">
+											<th class="hideextra thead">Units in Stock:</th>
+											<td id="prodStock">Something Else</td>
+										</tr>
+										<tr>
+											<th class="hideextra thead">Supplier:</th>
+											<td id="prodSupply">Something Else</td>
+										</tr>
+										<tr class="tr2">
+											<th class="hideextra thead">Discontinued:</th>
+											<td id="prodDisc">Something Else</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -146,6 +163,17 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Js -->
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"
+		integrity="sha512-1/RvZTcCDEUjY/CypiMz+iqqtaoQfAITmNSJY17Myp4Ms5mdxPS5UV7iOfdZoxcGhzFbOm6sntTKJppjvuhg4g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+	<script src="js/plugins.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+		integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="js/details.js"></script>
 </body>
 
 </html>
