@@ -706,6 +706,29 @@ td a:hover{
   color: #ff6d60;
 }
 
+.tableHead {
+  color: orange;
+  font-size: x-large;
+  font-weight: 900;
+}
+
+#productInfoBody > tr > td {
+  text-align: right;
+}
+
+.tr2 {
+  background-color: rgba(69, 69, 69, 0.744);
+}
+
+.thead {
+  color: pink;
+  text-align: start;
+}
+
+.card.rounded-5.p-5.wow.fadeInUp.text-bg-dark {
+  margin: 5rem;
+}
+
 .hideextra { white-space: nowrap; overflow: hidden; text-overflow:ellipsis; }
 /* Target that navbar */
 ul.nav.navbar-nav.navbar-right.text-right {
