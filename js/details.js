@@ -15,9 +15,6 @@ window.addEventListener('load', function(){
             })
         }
     }
-    else {
-        window.location.replace("productsBS5.html")
-    }
 })
 
 function showProductInfo(data) {
@@ -27,11 +24,22 @@ function showProductInfo(data) {
     const productStockField = document.getElementById("prodStock");
     const productSupplyField = document.getElementById("prodSupply");
     const productDiscField = document.getElementById("prodDisc");
+    const categoryImg = document.getElementById("categoryImgField");
+    // Array for Category's Images
+    const categoryArray = ["drinks", "condiments", "confections", "dairy",
+                        "grains", "meats", "produce", "seafood"]
 
     productNameField.innerHTML = data.productName;
     productIDField.innerHTML = data.productId;
     productCostField.innerHTML = `$${(parseFloat(data.unitPrice)).toFixed(2)}`;
     productStockField.innerHTML = data.unitsInStock;
     productSupplyField.innerHTML = data.supplier;
-    productDiscField.innerHTML = data.discontinued;
+
+    if (data.discontinued == 'true') {
+        productDiscField.innerHTML = "Sorry, we no longer have this product."
+    } else {
+        productDiscField.innerHTML = "In Stock"
+    }
+
+    categoryImg.src =`../images/categories/${categoryArray[data["categoryId"] - 1]}.jpg`
 }
