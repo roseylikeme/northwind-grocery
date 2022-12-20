@@ -61,7 +61,8 @@ The most challenging part in completing this project was converting BS3 to BS5 a
 
 ## What I've Learned
 
-I've learned a lot through building this grocery store website. I've further learned how to utilize API's to gather data and display it on my webpage. Also, prior to this project, I didn't really understand how to utilize Node.js, now I understand how to install and configure REST API servers and run it locally on my computer.
+I've learned a lot through building this grocery store website. I've further learned how to utilize API's to gather data and display it on my webpage. Also, prior to this project, I didn't really understand how to utilize Node.js, now I understand how to install and configure REST API servers and run it locally on my computer. I've also gotten better at fetching info from an API. The JS portion wasn't the most difficult thing this time.
 
 - How to install and configure a REST API server locally.
 - How to animate my webpage using CSS animation libraries such as Animate.css and WOW.js
+- How to create a navbar that's not necessarily all the way on top.
